@@ -1,0 +1,30 @@
+// base
+
+// Normalize++
+html {box-sizing: border-box;}
+*, *::before, *::after {box-sizing: inherit;}
+
+img {width: 100%;}
+
+// Default theme
+html {
+  font-family: @standardFont;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: @backgroundColor;
+  color: @textColor;
+}
+h1, h2, h3, h4 {
+  color: @primaryColor;
+}
+a {
+  color: @primaryColor;
+  text-decoration: none;
+  &:hover {
+    color: @accentColor;
+  }
+}

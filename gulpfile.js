@@ -12,54 +12,51 @@ const $ = require('gulp-load-plugins')({
 // Tasks
 
 gulp.task('build:html', () => {
-
   return gulp.src('src/docs/*.html')
     .pipe($.hb()
       .data({pkg: pkg})
       .partials('src/docs/partials/**/*.hbs')
     )
     .pipe(gulp.dest('docs'));
-
 });
 gulp.task('watch:html', () => {
   return gulp.watch(['src/docs/**/*.{html,hbs}'], gulp.series('build:html'));
 });
 
 gulp.task('build:styles', () => {
-
-  // return gulp.src('css/styles.less')
-  //   .pipe($.less({
-  //     //plugins: [new $.lessPluginLists()]
-  //   }))
-  //   .pipe($.hb().data({pkg: pkg}))
-  //   .pipe($.autoprefixer())
-  //   .pipe(gulp.dest('css'))
-  //   .pipe($.cleanCss({
-  //     format: {
-  //       breaks: {afterComment: true}
-  //     },
-  //     level: {
-  //       1: {specialComments: '1'},
-  //       2: {restructureRules: true}
-  //     }
-  //   }))
-  //   .pipe($.rename({suffix: '.min'}))
-  //   .pipe(gulp.dest('css'));
-  //   //.pipe($.browserSync.stream());
+  return gulp.src('src/docs/css/styles.less')
+    .pipe($.less({
+      //plugins: [new $.lessPluginLists()]
+    }))
+    .pipe($.hb().data({pkg: pkg}))
+    .pipe($.autoprefixer())
+    .pipe(gulp.dest('docs/css'))
+    .pipe($.cleanCss({
+      format: {
+        breaks: {afterComment: true, afterRuleEnds: true} // Debug only
+        //breaks: {afterComment: true}
+      },
+      level: {
+        1: {specialComments: '1'},
+        2: {restructureRules: true}
+      }
+    }))
+    .pipe($.rename({suffix: '.min'}))
+    .pipe(gulp.dest('docs/css'));
 });
 gulp.task('watch:styles', () => {
-  return gulp.watch(['**/*.less'], gulp.series('build:styles'));
+  return gulp.watch(['src/less/*.{less,css}', 'src/docs/css/styles.less'], gulp.series('build:styles'));
 });
 
 gulp.task('watch', gulp.parallel('watch:html', 'watch:styles'));
 
 gulp.task('browserSync', () => {
-  // $.browserSync.init({
-  //   server: true,
-  //   files: ['*.html', 'css/styles.min.css'],
-  //   browser: ['chrome'],
-  //   //notify: false
-  // });
+  $.browserSync.init({
+    server: 'docs',
+    files: ['docs/*.html', 'docs/css/styles.min.css'],
+    browser: ['chrome'],
+    //notify: false
+  });
 });
 
 gulp.task('default',
