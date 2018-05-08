@@ -362,6 +362,11 @@ blockquote > footer {
 blockquote > footer:before {
   content: "\2014 \00A0";
 }
+pre {
+  background-color: #F1F1F1;
+  padding: 0.75rem;
+  overflow: auto;
+}
 body {
   font-size: 1rem;
   line-height: 1.5;
@@ -381,14 +386,17 @@ blockquote,
 pre,
 table,
 time,
-address {
+address,
+header,
+footer,
+aside,
+nav {
   margin-top: 0;
   margin-bottom: 1.5rem;
 }
 h1 {
   font-size: 2.827rem;
   line-height: 3rem;
-  margin-bottom: 3rem;
 }
 h2 {
   font-size: 1.999rem;
@@ -403,4 +411,59 @@ h5,
 h6 {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+img {
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+p > img {
+  float: right;
+  width: 25%;
+  margin: .375rem 0;
+  padding-left: .75rem;
+}
+p {
+  text-align: justify;
+}
+body > header,
+body > article,
+body > section,
+body > aside,
+body > footer {
+  margin: 0 auto 1rem;
+  padding: 0.75rem;
+  max-width: 90%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+@media (min-width: 44rem) {
+  body > header,
+  body > article,
+  body > section,
+  body > aside,
+  body > footer {
+    max-width: 42rem;
+  }
+}
+body > header *:last-child,
+body > article *:last-child,
+body > section *:last-child,
+body > aside *:last-child,
+body > footer *:last-child {
+  margin-bottom: 0;
+}
+body > header > nav ul,
+body > footer > nav ul {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+}
+body > header > nav ul li,
+body > footer > nav ul li {
+  margin-right: .375rem;
+  padding: 2px 6px;
+  border: 1px solid #C0CA33;
+}
+body > section > ol {
+  list-style-type: none;
+  padding-left: 0;
 }
