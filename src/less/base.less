@@ -4,21 +4,21 @@
 html {box-sizing: border-box;}
 *, *::before, *::after {box-sizing: inherit;}
 
-img {width: 100%;}
+img {max-width: 100%;}
 
-// Default theme
+time, address {
+  display: block;
+}
+
 html {
   font-family: @standardFont;
-  font-size: 1rem;
   font-weight: normal;
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
 }
 body {
   background: @backgroundColor;
   color: @textColor;
 }
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   color: @primaryColor;
 }
 a {
@@ -26,5 +26,22 @@ a {
   text-decoration: none;
   &:hover {
     color: @accentColor;
+    text-decoration: underline;
+  }
+}
+p+ul {
+  margin-top: -1.5rem;
+}
+ul ul, ul ol, ol ol, ol, ul {
+  margin-bottom: 0;
+}
+blockquote {
+  margin-left: 1.4rem;
+  padding-left: 1rem;
+  border-left: 4px solid @primaryColor;
+  & > p:last-of-type {margin-bottom: 0;}
+  & > footer {
+    font-style: italic;
+    &:before {content:"\2014 \00A0";}
   }
 }
