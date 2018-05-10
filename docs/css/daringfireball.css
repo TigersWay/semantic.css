@@ -1,0 +1,27 @@
+body {
+  font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+  color: #eee;
+  background-color: #4a525a;
+  font-size: 11px;
+  line-height: 1.8em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+blockquote {
+  background: #1D1F21;
+  border-left: 3px solid #99cc66;
+}
+pre {
+  background: #1D1F21;
+  border: 1px solid #5C5C5C;
+  border-radius: 5px;
+}
+code {
+  background: #1D1F21;
+}

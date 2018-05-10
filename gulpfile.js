@@ -24,7 +24,7 @@ gulp.task('watch:html', () => {
 });
 
 gulp.task('build:styles', () => {
-  return gulp.src('src/docs/css/styles.less')
+  return gulp.src('src/docs/css/*.less')
     .pipe($.less({
       //plugins: [new $.lessPluginLists()]
     }))
@@ -45,7 +45,7 @@ gulp.task('build:styles', () => {
     .pipe(gulp.dest('docs/css'));
 });
 gulp.task('watch:styles', () => {
-  return gulp.watch(['src/less/*.{less,css}', 'src/docs/css/styles.less'], gulp.series('build:styles'));
+  return gulp.watch(['src/less/*.{less,css}', 'src/docs/css/*.less'], gulp.series('build:styles'));
 });
 
 gulp.task('watch', gulp.parallel('watch:html', 'watch:styles'));
@@ -53,7 +53,7 @@ gulp.task('watch', gulp.parallel('watch:html', 'watch:styles'));
 gulp.task('browserSync', () => {
   $.browserSync.init({
     server: 'docs',
-    files: ['docs/*.html', 'docs/css/styles.min.css'],
+    files: ['docs/*.html', 'docs/css/*.min.css'],
     browser: ['chrome'],
     //notify: false
   });

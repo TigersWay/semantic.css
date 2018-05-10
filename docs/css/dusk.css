@@ -1,0 +1,26 @@
+body {
+  font-family: "Arial", Gadget, sans-serif !important;
+  color: #dbdbdb !important;
+  background-color: #101010 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: #43239D !important;
+}
+blockquote {
+  background: #1D1F21;
+  border-left: 3px solid #99cc66;
+}
+pre {
+  background: #1D1F21;
+  border: 1px solid #5C5C5C;
+  border-radius: 5px;
+}
+code {
+  background: #1D1F21;
+}
