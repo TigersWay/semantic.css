@@ -7,12 +7,11 @@ pre,textarea{overflow:auto}
 [type=checkbox],[type=radio],legend{padding:0;box-sizing:border-box}
 html,legend{box-sizing:border-box}
 address,details,img,time{display:block}
-a,h1,h2,h3,h4,h5,h6{color:#c0ca33}
+a,h1,h2,h3,h4,h5,h6{color:#cc5de8}
 a:hover,abbr[title]{text-decoration:underline}
-html{line-height:1.15;-webkit-text-size-adjust:100%}
 h1{margin:.67em 0}
 hr{box-sizing:content-box;height:0}
-pre{background-color:#f1f1f1;padding:.75rem}
+pre{background-color:#f8f0fc;padding:.75rem}
 a{background-color:transparent;text-decoration:none}
 abbr[title]{border-bottom:none;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}
 b,strong{font-weight:bolder}
@@ -32,16 +31,17 @@ legend{color:inherit;display:table;white-space:normal}
 [type=search]{-webkit-appearance:textfield;outline-offset:-2px}
 [type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+body,html{line-height:1.5}
 h1,h2,h3{line-height:3rem}
 summary{display:list-item}
 [hidden],template{display:none}
-html{font-family:Verdana,Geneva,sans-serif;font-weight:400}
+html{-webkit-text-size-adjust:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-weight:400;font-size:14px}
 *,::after,::before{box-sizing:inherit}
-body{background:#fff;color:#222;font-size:1rem;line-height:1.5;margin:1rem auto;max-width:42rem}
-a:hover{color:#c99232}
+body{background:#fff;color:#24292e;font-size:1rem;margin:1rem auto;max-width:42rem}
+a:hover{color:#ae3ec9}
 p+ul{margin-top:-1.5rem}
 blockquote>p:last-of-type,body>article :last-child,body>aside :last-child,body>footer :last-child,body>header :last-child,body>section :last-child,ol,ol ol,ul,ul ol,ul ul{margin-bottom:0}
-blockquote{margin-left:1.4rem;padding-left:1rem;border-left:4px solid #c0ca33}
+blockquote{margin-left:1.4rem;padding-left:1rem;border-left:4px solid #cc5de8}
 blockquote>footer{font-style:italic}
 blockquote>footer:before{content:"\2014 \00A0"}
 address,aside,blockquote,footer,h1,h2,h3,h4,h5,h6,header,nav,ol,p,pre,table,time,ul{margin-top:0;margin-bottom:1.5rem}
@@ -53,5 +53,5 @@ p>img{float:right;width:25%;margin:.375rem 0;padding-left:.75rem}
 p{text-align:justify}
 body>article,body>aside,body>footer,body>header,body>section{margin:0 auto 1rem;padding:.75rem;max-width:90%;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}
 @media (min-width:44rem){body>article,body>aside,body>footer,body>header,body>section{max-width:42rem}}body>footer>nav ul,body>header>nav ul{list-style-type:none;display:flex;padding-left:0}
-body>footer>nav ul li,body>header>nav ul li{margin-right:.375rem;padding:2px 6px;border:1px solid #c0ca33}
+body>footer>nav ul li,body>header>nav ul li{margin-right:.375rem;padding:2px 6px;border:1px solid #f3d9fa}
 body>section>ol{list-style-type:none;padding-left:0}

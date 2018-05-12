@@ -24,7 +24,8 @@
     "gulp-hb": "^7.0.1",
     "gulp-less": "^3.5.0",
     "gulp-load-plugins": "^1.5.0",
-    "gulp-rename": "^1.2.2"
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
   },
   "optionalDependencies": {
     "less": "^2.7.3"

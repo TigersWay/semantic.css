@@ -315,12 +315,14 @@ address {
   display: block;
 }
 html {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
 }
 body {
-  background: white;
-  color: #222;
+  background: #ffffff;
+  color: #24292e;
 }
 h1,
 h2,
@@ -328,14 +330,14 @@ h3,
 h4,
 h5,
 h6 {
-  color: #C0CA33;
+  color: #cc5de8;
 }
 a {
-  color: #C0CA33;
+  color: #cc5de8;
   text-decoration: none;
 }
 a:hover {
-  color: #C99232;
+  color: #ae3ec9;
   text-decoration: underline;
 }
 p + ul {
@@ -351,7 +353,7 @@ ul {
 blockquote {
   margin-left: 1.4rem;
   padding-left: 1rem;
-  border-left: 4px solid #C0CA33;
+  border-left: 4px solid #cc5de8;
 }
 blockquote > p:last-of-type {
   margin-bottom: 0;
@@ -363,7 +365,7 @@ blockquote > footer:before {
   content: "\2014 \00A0";
 }
 pre {
-  background-color: #F1F1F1;
+  background-color: #f8f0fc;
   padding: 0.75rem;
   overflow: auto;
 }
@@ -461,7 +463,7 @@ body > header > nav ul li,
 body > footer > nav ul li {
   margin-right: .375rem;
   padding: 2px 6px;
-  border: 1px solid #C0CA33;
+  border: 1px solid #f3d9fa;
 }
 body > section > ol {
   list-style-type: none;

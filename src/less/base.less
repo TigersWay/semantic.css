@@ -13,19 +13,21 @@ time, address {
 html {
   font-family: @standardFont;
   font-weight: normal;
+  font-size: 16px * @baseSize;
+  line-height: 1.5;
 }
 body {
   background: @backgroundColor;
   color: @textColor;
 }
 h1, h2, h3, h4, h5, h6 {
-  color: @primaryColor;
+  color: extract(@primaryColors, 6);
 }
 a {
-  color: @primaryColor;
+  color: extract(@primaryColors, 6);
   text-decoration: none;
   &:hover {
-    color: @accentColor;
+    color: extract(@primaryColors, 8);
     text-decoration: underline;
   }
 }
@@ -38,7 +40,7 @@ ul ul, ul ol, ol ol, ol, ul {
 blockquote {
   margin-left: 1.4rem;
   padding-left: 1rem;
-  border-left: 4px solid @primaryColor;
+  border-left: 4px solid extract(@primaryColors, 6);
   & > p:last-of-type {margin-bottom: 0;}
   & > footer {
     font-style: italic;
@@ -46,7 +48,7 @@ blockquote {
   }
 }
 pre {
-  background-color: #F1F1F1;
+  background-color: extract(@primaryColors, 1);
   padding: @padding;
   overflow: auto;
 }
