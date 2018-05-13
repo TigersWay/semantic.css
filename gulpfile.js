@@ -25,6 +25,7 @@ gulp.task('watch:html', () => {
 
 gulp.task('build:js', () => {
   return gulp.src('src/js/*.js')
+    .pipe($.concat('scripts.js'))
     .pipe($.uglify())
     .pipe($.rename({suffix: '.min'}))
     .pipe(gulp.dest('docs/js'));
