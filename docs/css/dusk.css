@@ -1,7 +1,11 @@
+html {
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
 body {
-  font-family: "Arial", Gadget, sans-serif !important;
-  color: #dbdbdb !important;
-  background-color: #101010 !important;
+  background-color: #101010;
+  color: #dbdbdb;
 }
 h1,
 h2,
@@ -9,8 +13,8 @@ h3,
 h4,
 h5,
 h6 {
+  color: #99cc66;
   font-weight: normal;
-  color: #43239D !important;
 }
 blockquote {
   background: #1D1F21;

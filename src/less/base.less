@@ -13,34 +13,34 @@ time, address {
 html {
   font-family: @standardFont;
   font-weight: normal;
-  font-size: 16px * @baseSize;
-  line-height: 1.5;
+  font-size: unit(@baseSize*100/16, %);
 }
 body {
   background: @backgroundColor;
   color: @textColor;
+  background-image: url(http://basehold.it/i/21);
 }
 h1, h2, h3, h4, h5, h6 {
-  color: extract(@primaryColors, 6);
+  color: @headingColor;
 }
 a {
-  color: extract(@primaryColors, 6);
+  color: extract(@linkColors, 1);
   text-decoration: none;
   &:hover {
-    color: extract(@primaryColors, 8);
+    color: extract(@linkColors, 2);
     text-decoration: underline;
   }
 }
-p+ul {
-  margin-top: -1.5rem;
-}
-ul ul, ul ol, ol ol, ol, ul {
-  margin-bottom: 0;
-}
+// p+ul {
+//   margin-top: -1.5rem;
+// }
+// ul ul, ul ol, ol ol, ol, ul {
+//   margin-bottom: 0;
+// }
 blockquote {
-  margin-left: 1.4rem;
-  padding-left: 1rem;
-  border-left: 4px solid extract(@primaryColors, 6);
+  margin-left: 1.8em;
+  padding-left: .8em;
+  border-left: 4px solid @headingColor;
   & > p:last-of-type {margin-bottom: 0;}
   & > footer {
     font-style: italic;
@@ -49,6 +49,12 @@ blockquote {
 }
 pre {
   background-color: extract(@primaryColors, 1);
-  padding: @padding;
+  padding: .75em .75rem;
   overflow: auto;
 }
+pre, code, kbd, samp {
+  font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+// article {
+//   font-size: 1rem * @proseSize;
+// }

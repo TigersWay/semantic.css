@@ -317,12 +317,12 @@ address {
 html {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 100%;
 }
 body {
   background: #ffffff;
   color: #24292e;
+  background-image: url(http://basehold.it/i/21);
 }
 h1,
 h2,
@@ -330,30 +330,20 @@ h3,
 h4,
 h5,
 h6 {
-  color: #cc5de8;
+  color: #3272d9;
 }
 a {
-  color: #cc5de8;
+  color: #3272d9;
   text-decoration: none;
 }
 a:hover {
-  color: #ae3ec9;
+  color: #114599;
   text-decoration: underline;
 }
-p + ul {
-  margin-top: -1.5rem;
-}
-ul ul,
-ul ol,
-ol ol,
-ol,
-ul {
-  margin-bottom: 0;
-}
 blockquote {
-  margin-left: 1.4rem;
-  padding-left: 1rem;
-  border-left: 4px solid #cc5de8;
+  margin-left: 1.8em;
+  padding-left: .8em;
+  border-left: 4px solid #3272d9;
 }
 blockquote > p:last-of-type {
   margin-bottom: 0;
@@ -365,15 +355,19 @@ blockquote > footer:before {
   content: "\2014 \00A0";
 }
 pre {
-  background-color: #f8f0fc;
-  padding: 0.75rem;
+  background-color: #f0f5fc;
+  padding: .75em .75rem;
   overflow: auto;
 }
+pre,
+code,
+kbd,
+samp {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
 body {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 1rem auto;
-  max-width: 42rem;
+  font-size: 16px;
+  line-height: 1.45;
 }
 h1,
 h2,
@@ -393,79 +387,38 @@ header,
 footer,
 aside,
 nav {
+  font-size: 1em;
+  line-height: 1.45;
+  margin-bottom: 1.45em;
   margin-top: 0;
-  margin-bottom: 1.5rem;
 }
 h1 {
-  font-size: 2.827rem;
-  line-height: 3rem;
+  font-size: 3.15733452em;
+  line-height: 0.91849628;
+  margin-bottom: 0.45924814em;
 }
 h2 {
-  font-size: 1.999rem;
-  line-height: 3rem;
+  font-size: 2.36859304em;
+  line-height: 0.61217777;
+  margin-bottom: 0.61217777em;
 }
 h3 {
-  font-size: 1.414rem;
-  line-height: 3rem;
+  font-size: 1.776889em;
+  line-height: 0.81603297;
+  margin-bottom: 0.81603297em;
 }
-h4,
+h4 {
+  font-size: 1.333em;
+  line-height: 1.08777194;
+  margin-bottom: 1.08777194em;
+}
 h5,
 h6 {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 1em;
+  line-height: 1.45;
+  margin-bottom: 1.45em;
 }
-img {
-  display: block;
-  margin: 0 auto 1.5rem;
-}
-p > img {
-  float: right;
-  width: 25%;
-  margin: .375rem 0;
-  padding-left: .75rem;
-}
-p {
-  text-align: justify;
-}
-body > header,
-body > article,
-body > section,
-body > aside,
-body > footer {
-  margin: 0 auto 1rem;
-  padding: 0.75rem;
-  max-width: 90%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-@media (min-width: 44rem) {
-  body > header,
-  body > article,
-  body > section,
-  body > aside,
-  body > footer {
-    max-width: 42rem;
-  }
-}
-body > header *:last-child,
-body > article *:last-child,
-body > section *:last-child,
-body > aside *:last-child,
-body > footer *:last-child {
-  margin-bottom: 0;
-}
-body > header > nav ul,
-body > footer > nav ul {
-  list-style-type: none;
-  display: flex;
-  padding-left: 0;
-}
-body > header > nav ul li,
-body > footer > nav ul li {
-  margin-right: .375rem;
-  padding: 2px 6px;
-  border: 1px solid #f3d9fa;
-}
-body > section > ol {
-  list-style-type: none;
-  padding-left: 0;
+body {
+  margin: 0 auto;
+  max-width: 42rem;
 }

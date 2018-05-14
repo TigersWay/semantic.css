@@ -1,25 +1,25 @@
 /*! semantic.css v0.1.0 | MIT | Ben Michaud <ben@tigersway.net> */
-code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
 button,hr,input{overflow:visible}
 img,legend{max-width:100%}
 progress,sub,sup{vertical-align:baseline}
-pre,textarea{overflow:auto}
 [type=checkbox],[type=radio],legend{padding:0;box-sizing:border-box}
 html,legend{box-sizing:border-box}
-address,details,img,time{display:block}
-a,h1,h2,h3,h4,h5,h6{color:#cc5de8}
+address,details,time{display:block}
+a,h1,h2,h3,h4,h5,h6{color:#3272d9}
 a:hover,abbr[title]{text-decoration:underline}
+pre,textarea{overflow:auto}
+html{line-height:1.15;-webkit-text-size-adjust:100%}
 h1{margin:.67em 0}
 hr{box-sizing:content-box;height:0}
-pre{background-color:#f8f0fc;padding:.75rem}
 a{background-color:transparent;text-decoration:none}
 abbr[title]{border-bottom:none;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}
 b,strong{font-weight:bolder}
+code,kbd,samp{font-size:1em}
 small{font-size:80%}
 sub,sup{font-size:75%;line-height:0;position:relative}
 sub{bottom:-.25em}
 sup{top:-.5em}
-img{border-style:none;margin:0 auto 1.5rem}
+img{border-style:none}
 button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}
 button,select{text-transform:none}
 [type=button],[type=reset],[type=submit],button{-webkit-appearance:button}
@@ -31,27 +31,22 @@ legend{color:inherit;display:table;white-space:normal}
 [type=search]{-webkit-appearance:textfield;outline-offset:-2px}
 [type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
-body,html{line-height:1.5}
-h1,h2,h3{line-height:3rem}
+body,h5,h6{line-height:1.45}
 summary{display:list-item}
 [hidden],template{display:none}
-html{-webkit-text-size-adjust:100%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-weight:400;font-size:14px}
+html{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-weight:400;font-size:100%}
 *,::after,::before{box-sizing:inherit}
-body{background:#fff;color:#24292e;font-size:1rem;margin:1rem auto;max-width:42rem}
-a:hover{color:#ae3ec9}
-p+ul{margin-top:-1.5rem}
-blockquote>p:last-of-type,body>article :last-child,body>aside :last-child,body>footer :last-child,body>header :last-child,body>section :last-child,ol,ol ol,ul,ul ol,ul ul{margin-bottom:0}
-blockquote{margin-left:1.4rem;padding-left:1rem;border-left:4px solid #cc5de8}
+body{background:url(http://basehold.it/i/21) #fff;color:#24292e;font-size:16px;margin:0 auto;max-width:42rem}
+a:hover{color:#114599}
+blockquote{margin-left:1.8em;padding-left:.8em;border-left:4px solid #3272d9}
+blockquote>p:last-of-type{margin-bottom:0}
 blockquote>footer{font-style:italic}
 blockquote>footer:before{content:"\2014 \00A0"}
-address,aside,blockquote,footer,h1,h2,h3,h4,h5,h6,header,nav,ol,p,pre,table,time,ul{margin-top:0;margin-bottom:1.5rem}
-h1{font-size:2.827rem}
-h2{font-size:1.999rem}
-h3{font-size:1.414rem}
-h4,h5,h6{font-size:1rem;line-height:1.5rem}
-p>img{float:right;width:25%;margin:.375rem 0;padding-left:.75rem}
-p{text-align:justify}
-body>article,body>aside,body>footer,body>header,body>section{margin:0 auto 1rem;padding:.75rem;max-width:90%;box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}
-@media (min-width:44rem){body>article,body>aside,body>footer,body>header,body>section{max-width:42rem}}body>footer>nav ul,body>header>nav ul{list-style-type:none;display:flex;padding-left:0}
-body>footer>nav ul li,body>header>nav ul li{margin-right:.375rem;padding:2px 6px;border:1px solid #f3d9fa}
-body>section>ol{list-style-type:none;padding-left:0}
+pre{background-color:#f0f5fc;padding:.75em .75rem}
+code,kbd,pre,samp{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}
+address,aside,blockquote,footer,h1,h2,h3,h4,h5,h6,header,nav,ol,p,pre,table,time,ul{font-size:1em;line-height:1.45;margin-bottom:1.45em;margin-top:0}
+h1{font-size:3.15733452em;line-height:.91849628;margin-bottom:.45924814em}
+h2{font-size:2.36859304em;line-height:.61217777;margin-bottom:.61217777em}
+h3{font-size:1.776889em;line-height:.81603297;margin-bottom:.81603297em}
+h4{font-size:1.333em;line-height:1.08777194;margin-bottom:1.08777194em}
+h5,h6{font-size:1em;margin-bottom:1.45em}

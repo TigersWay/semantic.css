@@ -1,5 +1,6 @@
 blockquote,code,pre{background:#1d1f21}
-body{font-family:Arial,Gadget,sans-serif!important;color:#dbdbdb!important;background-color:#101010!important}
-h1,h2,h3,h4,h5,h6{font-weight:400;color:#43239d!important}
+html{font-family:Arial,Gadget,sans-serif;font-size:16px;line-height:1.4}
+body{background-color:#101010;color:#dbdbdb}
+h1,h2,h3,h4,h5,h6{color:#9c6;font-weight:400}
 blockquote{border-left:3px solid #9c6}
 pre{border:1px solid #5c5c5c;border-radius:5px}
